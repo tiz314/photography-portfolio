@@ -12,7 +12,7 @@ body{
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: auto;
+    height: 100vh;
     overflow: auto;
 }
 
@@ -20,11 +20,17 @@ body{
     background-image: url(./photos/background-desktop-2.jpg);
 }
 
-.mainLogo{
+.mainLogo, .aboutMe{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
 
+
+.aboutMe{
+    margin-top: 10vh;
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
 .mainLogo img{
@@ -36,6 +42,25 @@ body{
     padding-top: 2rem;
 }
 
+.info{
+    color: #f0e7d1;
+    line-height: 40px;
+    font-size: 1.2rem;
+}
+
+.info a{
+    text-decoration: none;
+    padding: 5px;
+    background-color: #00c2cb;
+    border-radius: 5px;
+    color: #2c2c2c;
+}
+
+.info a:hover{
+    background-color: #d5aa54;
+    color: #1e2929; 
+    transition: 0.2s;
+}
 
 @keyframes fadeIn{
     0%{
