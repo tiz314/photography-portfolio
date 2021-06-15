@@ -1,0 +1,50 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1f628e
+}
+
+.main{
+    background-image: url(./photos/background-desktop.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: auto;
+    overflow: auto;
+}
+
+.galleryMain, .aboutMain{
+    background-image: url(./photos/background-desktop-2.jpg);
+}
+
+.mainLogo{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.mainLogo img{
+    animation-name: fadeIn;
+    animation-duration: 3.2s;
+}
+
+.gallery{
+    padding-top: 2rem;
+}
+
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+      transform: translateY(+10%);
+  
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
