@@ -20,13 +20,6 @@ body{
     background-image: url(./photos/background-desktop-2.jpg);
 }
 
-.mainLogo, .aboutMe{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-
 .aboutMe{
     margin-top: 10vh;
     animation-name: fadeIn;
