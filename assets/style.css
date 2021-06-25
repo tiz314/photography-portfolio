@@ -6,13 +6,16 @@ body{
     background-color: #1f628e
 }
 
+main {
+    min-height: calc(100vh - 30px);
+}
+
 .main{
     background-image: url(./photos/background-desktop.jpg);
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 100vh;
     overflow: auto;
 }
 
@@ -21,12 +24,11 @@ body{
 }
 
 .aboutMe{
-    margin-top: 10vh;
     animation-name: fadeIn;
     animation-duration: 2s;
 }
 
-.mainLogo img{
+#mainLogo{
     animation-name: fadeIn;
     animation-duration: 3.2s;
 }
@@ -65,4 +67,4 @@ body{
       opacity: 1;
       transform: translateY(0%);
     }
-  }
+}
