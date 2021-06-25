@@ -1,5 +1,6 @@
 *{
     scroll-behavior: smooth;
+    font-family: 'Playfair Display', serif;
 }
 
 body{
@@ -7,7 +8,7 @@ body{
 }
 
 main {
-    min-height: calc(100vh - 30px);
+    min-height: calc(100vh - 56px);
 }
 
 .main{
@@ -16,7 +17,6 @@ main {
     background-size:cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    overflow: auto;
 }
 
 .galleryMain, .aboutMain{
@@ -43,18 +43,8 @@ main {
     font-size: 1.2rem;
 }
 
-.info a{
-    text-decoration: none;
-    padding: 5px;
-    background-color: #00c2cb;
-    border-radius: 5px;
-    color: #2c2c2c;
-}
-
-.info a:hover{
-    background-color: #d5aa54;
-    color: #1e2929; 
-    transition: 0.2s;
+.info button{
+    margin-top:0;
 }
 
 @keyframes fadeIn{
@@ -68,3 +58,62 @@ main {
       transform: translateY(0%);
     }
 }
+
+button {
+    margin: 50px;
+}
+  /* End of Page styling */
+  
+
+/* Slide button styling */
+.slide {
+margin-top: 5rem;
+font-size: 20px;
+font-weight: 200;
+letter-spacing: 1px;
+padding: 13px 30px 13px;
+outline: 0;
+border: 2px solid #efebd0;
+cursor: pointer;
+position: relative;
+background-color: rgba(0, 0, 0, 0);
+}
+
+.slide a, .slide a:hover{ 
+    color: #efebd0;
+    text-decoration: none;
+}
+
+.slide i {
+opacity: 0;
+font-size: 13px;
+transition: 0.2s;
+position: absolute;
+right: 10px;
+top: 21px;
+transition: transform 1;
+}
+
+.slide div {
+transition: transform 0.8s;
+}
+
+.slide:hover div {
+transform: translateX(-6px);
+}
+
+.slide::after {
+content: "";
+width: 100%;
+z-index: -1;
+position: absolute;
+height: 100%;
+top: 7px;
+left: 7px;
+}
+
+.slide:hover i {
+opacity: 1;
+transform: translateX(-6px);
+}
+/* End of Slide Button  */
