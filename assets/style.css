@@ -12,7 +12,7 @@ body{
 }
 
 main {
-    height: 100vh;
+    min-height: calc(100vh - 50px);
 }
 
 /*.main, .galleryMain, .aboutMain{
