@@ -21,6 +21,7 @@ main {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .galleryMain, .aboutMain{
@@ -130,10 +131,10 @@ transform: translateX(-6px);
 
 /*---- Media queries ----*/
 
-@media only screen and (max-width: 900px) {
+/*@media only screen and (max-width: 900px) {
     .main{
       background-color: brown;
 
       background-image: none;
     }
-  }
+  }*/
