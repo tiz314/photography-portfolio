@@ -133,5 +133,7 @@ transform: translateX(-6px);
 @media only screen and (max-width: 900px) {
     .main{
       background-color: brown;
+
+      background-image: none;
     }
   }
