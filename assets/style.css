@@ -3,25 +3,18 @@
     font-family: 'Playfair Display', serif;
 }
 
-body{
-  background-image: url(./photos/background-desktop.jpg);
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat; 
-}
 
 main {
     min-height: calc(100vh - 50px);
 }
 
-/*.main, .galleryMain, .aboutMain{
+.main, .galleryMain, .aboutMain{
     background-image: url(./photos/background-desktop.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat; 
-}*/
+}
 
 .galleryMain, .aboutMain{
     background-image: url(./photos/background-desktop-2.jpg);
