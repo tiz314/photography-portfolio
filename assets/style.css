@@ -15,7 +15,7 @@ main {
     min-height: calc(100vh - 51px);
 }
 
-.main{
+.main, .galleryMain, .aboutMain{
     background-image: url(./photos/background-desktop.jpg);
     background-position: center;
     background-size: cover;
