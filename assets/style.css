@@ -126,3 +126,12 @@ opacity: 1;
 transform: translateX(-6px);
 }
 /* End of Slide Button  */
+
+
+/*---- Media queries ----*/
+
+@media only screen and (max-width: 600px) {
+    .main{
+      background-color: brown;
+    }
+  }
