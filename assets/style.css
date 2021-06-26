@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: red;
+    background-color: #14213d;
 }
 
 .navbar{
@@ -126,16 +126,3 @@ opacity: 1;
 transform: translateX(-6px);
 }
 /* End of Slide Button  */
-
-
-/*---- Media queries ----*/
-
-@media only screen and (max-width: 600px) {
-    body{
-      background-image: url(./photos/background-desktop-2.jpg);
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-    }
-  }
