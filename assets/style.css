@@ -3,9 +3,12 @@
     font-family: 'Playfair Display', serif;
 }
 
+body{
+    background-color: #14213d;
+}
 
 main {
-    min-height: calc(100vh - 50px);
+    min-height: calc(100vh - 51px);
 }
 
 .main, .galleryMain, .aboutMain{
@@ -13,7 +16,7 @@ main {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 .galleryMain, .aboutMain{
