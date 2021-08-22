@@ -12,7 +12,7 @@ main {
 }
 
 .main, .galleryMain, .aboutMain{
-    background-image: url(./photos/background-desktop.jpg);
+    background-image: url(./photos/background-desktop.webp);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -20,7 +20,7 @@ main {
 }
 
 .galleryMain, .aboutMain{
-    background-image: url(./photos/background-desktop-2.jpg);
+    background-image: url(./photos/background-desktop-2.webp);
 }
 
 .aboutMe{
