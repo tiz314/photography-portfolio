@@ -65,6 +65,13 @@ body {
 .linkElement {
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    transition: 0.1s;
+}
+
+.linkElement a:hover{
+    color: #707F8C;
+    transition: 0.3s;
+    transform: translateX(7px);
 }
 
 #footer {
