@@ -1,135 +1,139 @@
-*{
-    scroll-behavior: smooth;
-    font-family: 'Playfair Display', serif;
+* {
+    color: #F0F0F2;
+    font-family: 'Cormorant', serif;
 }
 
-body{
-    background-color: #14213d;
+a {
+    text-decoration: none;
+    color: #F0F0F2;
 }
 
-main {
-    min-height: calc(100vh - 51px);
+li a {
+    font-size: 1.2rem;
 }
 
-.main, .galleryMain, .aboutMain{
-    background-image: url(./photos/background-desktop.webp);
+#mainMobileNav {
+    display: none;
+}
+
+#footer a,
+#aboutText a {
+    transition: 0.2s;
+}
+
+#footer a:hover,
+#aboutText a:hover {
+    color: #707F8C;
+    transition: 0.4s;
+}
+
+body {
+    background-color: #1F2226;
+}
+
+#mainWindow {
+    height: 100vh;
+    background: url("./photos/monument.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+#menu {
+    margin-left: 3rem;
+}
+
+#mainLogo {
+    margin-top: 20vh;
+    margin-bottom: 3rem;
+}
+
+#mainLogo img {
+    width: 15rem;
+}
+
+#mainTitle {
+    margin-bottom: 1rem;
+    font-size: 5rem;
+}
+
+#mainTitle div {
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: #F0F0F2;
+}
+
+.linkElement {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    transition: 0.1s;
+}
+
+.linkElement a:hover{
+    color: #707F8C;
+    transition: 0.3s;
+    transform: translateX(7px);
+}
+
+#footer {
+    font-size: 1.3rem;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    border-style: solid;
+    border-width: 0 0 0 2px;
+    border-color: #F0F0F2;
+}
+
+/*  about.html style */
+
+#aboutWindow {
+    height: 100vh;
+    background: url("./photos/background-desktop-2.webp");
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
 }
 
-.galleryMain, .aboutMain{
-    background-image: url(./photos/background-desktop-2.webp);
+#aboutText {
+    font-size: 1.5rem;
 }
 
-.aboutMe{
-    animation-name: fadeIn;
-    animation-duration: 2s;
+/*Explore style*/
+
+.explorePhotos{
+    margin-top: 5rem;
 }
 
-#mainLogo{
-    animation-name: fadeIn;
-    animation-duration: 3.2s;
-    width: 20rem;
+.explorePhotos img{
+    padding: 1rem;
+    width: 30rem;
 }
 
-#logo{
-  width: 15rem;
-} 
-
-.gallery{
-    padding-top: 2rem;
+.caption{
+    font-size: 1.2rem
 }
 
-.info{
-    color: #f0e7d1;
-    line-height: 1.8rem;
-    font-size: 1rem;
-}
+@media screen and (max-width: 500px) {
 
-.info button{
-    margin-top:0;
-}
-
-@keyframes fadeIn{
-    0%{
-      opacity: 0;
-      transform: translateY(+5%);
-  
+    #mainMobileNav{
+        display: block;
     }
-    100%{
-      opacity: 1;
-      transform: translateY(0%);
+    
+    #footer{
+        border-width: 0 0 0 0;
     }
-}
-
-button {
-    margin: 50px;
-}
-  /* End of Page styling */
-  
-
-/* Slide button styling */
-.slide {
-  margin-top: 5rem;
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 1px;
-  padding: 13px 30px 13px;
-  outline: 0;
-  border: 2px solid #efebd0;
-  cursor: pointer;
-  position: relative;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.slide a, .slide a:hover{ 
-  color: #efebd0;
-  text-decoration: none;
-}
-
-.slide i {
-  opacity: 0;
-  font-size: 13px;
-  transition: 0.2s;
-  position: absolute;
-  right: 10px;
-  top: 21px;
-  transition: transform 1;
-}
-
-.slide div {
-  transition: transform 0.8s;
-}
-
-.slide:hover div {
-  transform: translateX(-6px);
-}
-
-.slide::after {
-  content: "";
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 100%;
-  top: 7px;
-  left: 7px;
-}
-
-.slide:hover i {
-opacity: 1;
-transform: translateX(-6px);
-}
-/* End of Slide Button  */
-
-
-/*---- Media queries ----*/
-
-/*@media only screen and (max-width: 900px) {
-    .main{
-      background-color: brown;
-
-      background-image: none;
+    
+    #footer p{
+        display: none;
     }
-  }*/
+
+    #mainLogo img{
+        display: none;
+    }
+
+    #mainWindow {
+        height: 100vh;
+        background: url("./photos/river.webp");
+        background-size: cover;
+        background-position: center;
+    }
+
+}
