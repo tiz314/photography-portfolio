@@ -111,6 +111,14 @@ body {
     font-size: 1.2rem
 }
 
+#mobileLogo{
+    display: none;
+}
+
+#propic{
+    border-radius: 100%;
+}
+
 @media screen and (max-width: 500px) {
 
     #mainMobileNav{
@@ -134,6 +142,11 @@ body {
         background: url("./photos/river.webp");
         background-size: cover;
         background-position: center;
+    }
+
+    #mobileLogo{
+        display: block;
+        width: 4rem;
     }
 
 }
